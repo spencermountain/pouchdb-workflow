@@ -1,0 +1,28 @@
+{
+  "name": "pouchdb-workflow",
+  "description": "",
+  "version": "0.0.1",
+  "licence": "MIT",
+  "private": true,
+  "author": "Spencer Kelly (spencermountain)",
+  "homepage": "https://github.com/spencermountain/frown#readme",
+  "scripts": {
+    "start": "budo index.js:assets/bundle.js --live",
+    "watch": "npm run start",
+    "build": "browserify index.js -t [ babelify --presets [ @babel/preset-env ] ] | derequire > ./assets/bundle.js",
+    "build:old": "browserify index.js -t [ babelify --presets [ @babel/preset-env ] ] | terser -m -c > ./assets/bundle.js"
+  },
+  "dependencies": {
+    "htm": "2.1.1",
+    "pouchdb-browser": "7.0.0",
+    "vhtml": "2.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.0",
+    "@babel/preset-env": "7.4.2",
+    "babelify": "10.0.0",
+    "budo": "11.6.1",
+    "derequire": "2.0.6",
+    "terser": "3.17.0"
+  }
+}
