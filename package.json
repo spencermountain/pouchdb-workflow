@@ -15,6 +15,7 @@
   "dependencies": {
     "htm": "2.1.1",
     "pouchdb-browser": "7.0.0",
+    "somehow-input": "0.0.7",
     "vhtml": "2.1.0"
   },
   "devDependencies": {
